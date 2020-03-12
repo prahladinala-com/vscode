@@ -24,6 +24,7 @@
             &nbsp; VS Code Tools
         </a>
     </nav>
+ 
     <div class="container pt-2">
         <div class="row">
             <div class="col-lg-3 col-sm-6 col-xs-12 pl-2">
@@ -58,6 +59,7 @@
             </div>
         </div>
     </div>
+    
 
      <!-- footer section starts -->
      <div class="container-fluid bottom-footer fixed-bottom">
@@ -68,6 +70,10 @@
         </div>
     </div>
     <!-- footer section ends -->
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -133,6 +139,11 @@
             });
             $(".comp8").click(function () {
                 $("#comp8").fadeOut(2000);
+            });
+        </script>
+        <script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow")
             });
         </script>
 </body>
